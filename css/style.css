@@ -1,0 +1,18 @@
+:root {
+    --primary-color: #ff274b;
+    --secondaryColor: #f7bcf7;
+    --lightColor: #ffffff;
+    --bgColor-1: #171a1c;
+    --bgColor-2: #22282a;
+    --pading: 8%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html{
+    font-family: 'josefin sans' sans-serif;
+}
