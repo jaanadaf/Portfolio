@@ -14,5 +14,54 @@
 
 }
 html{
-    font-family: 'josefin sans' sans-serif;
+    font-family: 'josefin sans', sans-serif;
+    font-size: 16px;
+    color: var(--lightColor);
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bgColor-1);
+}
+samp{
+    color: var(--primary-color);
+}
+h2{
+    font-size: 2.2rem;
+    letter-spacing: 0.12rem;
+    cursor: pointer;
+}
+
+nav{   
+    padding-top: 2.8rem;
+    padding-left: var(--pading);
+    padding-right: var(--pading);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0.8rem 1.5rem;
+}
+nav ul li a {
+    color: var(--lightColor);
+    text-decoration: none;
+    text-transform: capitalize;
+
+}
+nav ul li a:hover{
+    color: var(--primary-color);
+    
+}
+
+.btn{
+    background-color: var(--primary-color);
+    color: var(--lightColor);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.81rem 1.87rem;
+    border-radius: 30px;
 }
