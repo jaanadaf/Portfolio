@@ -123,5 +123,15 @@ nav ul li a:hover{
 .container-images img{
     position: absolute;
     bottom: 0;
-
+    height: 100%;
+    left: 50%;
+    transform: translatex(-50%);
 }
+.container-images:hover .shape{
+    bottom: 40px;
+}
+.container-images:hover .Pic{
+    left: 45%;
+}
+
+
