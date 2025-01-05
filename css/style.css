@@ -177,7 +177,15 @@ nav ul li a:hover{
     width: 300px;
     background-color: var(--bgColor-2);
     border-radius: 20px;
-    padding: 1.3rem, 2rem;
+    padding: 1.3rem 2rem;
+    text-align: center;
+}
+.card i {
+    font-family: 3.12rem;
+    text-align: center;
+    color: var(--primary-color);
+    margin: 2rem;
+
 }
 
 
