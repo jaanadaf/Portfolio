@@ -187,5 +187,34 @@ nav ul li a:hover{
     margin: 2rem;
 
 }
+.skills{
+    background-color: var(--bgColor-2);
+    padding: 2rem var(--pading);
+    display: flex;
+    align-items: center;
+    justify-content: space-around ;
+}
+
+.skills .container-images{
+    width: 35%;
+}
+.skills .container-images img{
+    width: 90%;
+}
+.skills .container-skills{
+    width: 40%;
+}
+.content-skills{
+    display: flex;
+    flex-wrap: wrap;
+}
+.skills{
+    width: 100%;
+    height: 100%;
+    background-color: var(--lightColor);
+    border-radius: 50%;
+    margin: 0.2rem 2rem 0;
+}
+
 
 
