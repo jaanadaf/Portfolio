@@ -4,7 +4,7 @@
     --lightColor: #ffffff;
     --bgColor-1: #171a1c;
     --bgColor-2: #22282a;
-    --pading: 8%;
+    --padding: 8%;
 }
 
 *{
@@ -110,6 +110,13 @@ nav ul li a:hover{
     position: relative;
     bottom: 70px;
 }
+.container-texts{
+    position: relative;
+    bottom: 70px;
+}
+.social a {
+    text-decoration: none;
+}
 
 
 .social{
@@ -123,6 +130,9 @@ nav ul li a:hover{
 .social img:hover{
     transform: scale(1.2);
 } 
+/*--------------------------------------------------------------------------------------------
+*------------------------------------ HOME SECTION
+--------------------------------------------------------------------------------------------*/
 .home .container-images{
     width: 45%;
     height: 90%;
@@ -144,6 +154,10 @@ nav ul li a:hover{
 .home .container-images:hover .Pic{
     left: 45%;
 }
+
+/*--------------------------------------------------------------------------------------------
+*------------------------------------ ABOUT SECTION
+--------------------------------------------------------------------------------------------*/
 
 .about{
     background-color: var(--bgColor-2);
@@ -187,13 +201,22 @@ nav ul li a:hover{
     margin: 2rem;
 
 }
-.skills{
+
+/*--------------------------------------------------------------------------------------------
+*------------------------------------ SKILLS SECTION
+--------------------------------------------------------------------------------------------*/
+.skills {
     background-color: var(--bgColor-2);
-    padding: 2rem var(--pading);
+    padding: 2rem var(--padding);
     display: flex;
     align-items: center;
-    justify-content: space-around ;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    margin: 0.2rem 2rem 0;
 }
+
 
 .skills .container-images{
     width: 35%;
@@ -208,13 +231,11 @@ nav ul li a:hover{
     display: flex;
     flex-wrap: wrap;
 }
-.skills{
-    width: 100%;
-    height: 100%;
-    background-color: var(--lightColor);
-    border-radius: 50%;
-    margin: 0.2rem 2rem 0;
-}
+
+
+/*--------------------------------------------------------------------------------------------
+*------------------------------------ FOOTER SECTION
+--------------------------------------------------------------------------------------------*/
 
 footer{
     padding: 2rem var(--pading);
@@ -231,6 +252,86 @@ footer .content-footer p{
     text-align: center;
     width: 500px;
 }
-
+footer .content-footer .end{
+    color: var(--primary-color);
+    margin-top: 1rem;
+}
+/*--------------------------------------------------------------------------------------------
+*------------------------------------ HUMBERGER MENU
+--------------------------------------------------------------------------------------------*/
+#menu{
+    display: none;
+    position: relative;
+    appearance: none;
+    border: none;
+    background: none;
+    user-select: none;
+}
+#menu span{
+    display: block;
+    width: 33px;
+    height: 4px;
+    background-color: var(--lightColor);
+    border-radius: 6px;
+    transform-origin: 0 0;
+    transition: 0.4;
+    margin-bottom: 5px;
+}
+/*--------------------------------------------------------------------------------------------
+*------------------------------------ MEDIA QUERIES
+--------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 575px){
+    :root {
+        --padding: 1.5rem;
+    }
+    html{
+        font-size: 13px;
+    }
+    .home .container-images{
+        display: none;
+    }
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 82px;
+        padding-top: 0;
+        background-color: var(--bgColor-1);
+        border-bottom: 1px solid var(--bgColor-2);
+        z-index: 100;
+    }
+    nav > a {
+        display: none;
+    }
+    nav ul {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--bgColor-2);
+    }
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin: 30px;
+    }
+    .container-texts{
+        bottom: 0rem;
+    }
+    .social {
+        margin-top: 70px;
+    }
+    h3 {
+        margin-bottom: 70px;
+    }
+    #menu{
+        display: block;
+    }
+    
+  
+}
 
 
