@@ -277,6 +277,20 @@ footer .content-footer .end{
     transition: 0.4;
     margin-bottom: 5px;
 }
+#menu.is-active span:nth-child(1){
+    transform: translate(0px, -2px) rotate(45deg);
+}
+#menu.is-active span:nth-child(2){
+    opacity: 0;
+    transform: translatex(15px);
+}
+#menu.is-active span:nth-child(3){
+    transform: translate(-3px, 3px) rotate(-45deg);
+}
+#menu.is-active span{
+    background-color: var(--primary-color);
+}
+
 /*--------------------------------------------------------------------------------------------
 *------------------------------------ MEDIA QUERIES
 --------------------------------------------------------------------------------------------*/
@@ -312,6 +326,9 @@ footer .content-footer .end{
         width: 100vw;
         height: 100vh;
         background-color: var(--bgColor-2);
+    }
+    nav ul.is-active{
+        display: block;
     }
     nav ul li {
         display: block;
