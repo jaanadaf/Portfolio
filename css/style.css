@@ -216,5 +216,21 @@ nav ul li a:hover{
     margin: 0.2rem 2rem 0;
 }
 
+footer{
+    padding: 2rem var(--pading);
+    background-color: var(--bgColor-1);   
+}
+footer .content-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer .content-footer p{
+    color: var(--lightColor);
+    text-align: center;
+    width: 500px;
+}
+
 
 
